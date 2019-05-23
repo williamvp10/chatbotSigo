@@ -538,6 +538,7 @@ public class Chatbot {
         e = new JsonObject();
         JsonObject obj = (JsonObject) servicio.get("Club").getAsJsonObject();
         e.add("titulo", new JsonPrimitive("" + "" + obj.get("reglas").getAsString()));
+        e.add("subtitulo", new JsonPrimitive("Reglas"));       
         e.add("buttons", new JsonArray());
         elements.add(e);
 
@@ -563,6 +564,7 @@ public class Chatbot {
         e = new JsonObject();
         JsonObject obj = (JsonObject) servicio.get("Club").getAsJsonObject();
         e.add("titulo", new JsonPrimitive("" + "" + obj.get("almuerzo").getAsString()));
+        e.add("subtitulo", new JsonPrimitive("Almuerzo"));
         e.add("buttons", new JsonArray());
         elements.add(e);
 
@@ -588,6 +590,7 @@ public class Chatbot {
         e = new JsonObject();
         JsonObject obj = (JsonObject) servicio.get("Club").getAsJsonObject();
         e.add("titulo", new JsonPrimitive("" + "" + obj.get("remision").getAsString()));
+        e.add("subtitulo", new JsonPrimitive("Remision"));
         e.add("buttons", new JsonArray());
         elements.add(e);
 
