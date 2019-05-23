@@ -620,7 +620,7 @@ public class Chatbot {
                 e = new JsonObject();
                 JsonObject obj = elementosServicio.get(i).getAsJsonObject();
                 e.add("titulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
-                e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
+                e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("descripcion").getAsString()));
                 e.add("url", new JsonPrimitive("" + "" + obj.get("url").getAsString()));
                 e.add("buttons", new JsonArray());
                 elements.add(e);
@@ -630,7 +630,7 @@ public class Chatbot {
             e = new JsonObject();
             JsonObject obj = servicio.get("Servicio").getAsJsonObject();
             e.add("titulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
-            e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
+            e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("descripcion").getAsString()));
             e.add("url", new JsonPrimitive("" + "" + obj.get("url").getAsString()));
             e.add("buttons", new JsonArray());
             elements.add(e);
@@ -660,7 +660,7 @@ public class Chatbot {
             for (int i = 0; i < elementosServicio.size(); i++) {
                 e = new JsonObject();
                 JsonObject obj = elementosServicio.get(i).getAsJsonObject();
-                e.add("titulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
+                e.add("titulo", new JsonPrimitive("" + "" + obj.get("descripcion").getAsString()));
                 e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
                 e.add("url", new JsonPrimitive("" + "" + obj.get("url").getAsString()));
                 e.add("buttons", new JsonArray());
@@ -670,7 +670,7 @@ public class Chatbot {
         } catch (Exception err) {
             e = new JsonObject();
             JsonObject obj = servicio.get("Manualidad").getAsJsonObject();
-            e.add("titulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
+            e.add("titulo", new JsonPrimitive("" + "" + obj.get("descripcion").getAsString()));
             e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
             e.add("url", new JsonPrimitive("" + "" + obj.get("url").getAsString()));
             e.add("buttons", new JsonArray());
