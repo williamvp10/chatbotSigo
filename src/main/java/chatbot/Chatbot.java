@@ -501,7 +501,7 @@ public class Chatbot {
                 e = new JsonObject();
                 JsonObject obj = elementosServicio.get(i).getAsJsonObject();
                 e.add("titulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
-                e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
+                e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("fecha").getAsString()));
                 e.add("url", new JsonPrimitive("" + "" + obj.get("url").getAsString()));
                 e.add("buttons", new JsonArray());
                 elements.add(e);
@@ -511,7 +511,7 @@ public class Chatbot {
             e = new JsonObject();
             JsonObject obj = servicio.get("Evento").getAsJsonObject();
             e.add("titulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
-            e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("nombre").getAsString()));
+            e.add("subtitulo", new JsonPrimitive("" + "" + obj.get("fecha").getAsString()));
             e.add("url", new JsonPrimitive("" + "" + obj.get("url").getAsString()));
             e.add("buttons", new JsonArray());
             elements.add(e);
